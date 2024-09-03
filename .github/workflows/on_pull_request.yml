@@ -28,7 +28,7 @@ jobs:
           path: ${{ steps.describe-change-set.outputs.diff_file_path }}
 
       - name: Download diff markdown
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: diff
 
